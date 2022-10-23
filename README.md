@@ -23,6 +23,7 @@ yarn add -D vitepress-plugin-life-progress
 
 import DefaultTheme from "vitepress/theme"
 import vitepressLifeProgress from 'vitepress-plugin-life-progress'
+import 'vitepress-plugin-life-progress/lib/css/index.css'
 
 
 export default {
