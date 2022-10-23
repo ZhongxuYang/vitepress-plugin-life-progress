@@ -1,0 +1,50 @@
+{
+  "name": "vitepress-plugin-life-progress",
+  "version": "0.0.1",
+  "description": "Date progress bar plugin for vitepress",
+  "keywords": [
+    "documentation",
+    "life",
+    "progress",
+    "year",
+    "calendar",
+    "timetable",
+    "vue",
+    "vitepress"
+  ],
+  "author": "ZhongxuYang <himatthew@foxmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./lib/vitepress-plugin-life-progress.js",
+      "require": "./lib/vitepress-plugin-life-progress.umd.cjs"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhongxuYang/vitepress-plugin-life-progress.git"
+  },
+  "homepage": "https://github.com/ZhongxuYang/vitepress-plugin-life-progress.git",
+  "main": "./lib/vitepress-plugin-life-progress.umd.cjs",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json"
+  },
+  "peerDependencies": {
+    "vitepress": ">=1.x"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.4",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-easings": "^3.0.1",
+    "postcss-import": "^15.0.0",
+    "postcss-nested": "^6.0.0",
+    "typescript": "^4.8.4",
+    "vitepress": "^1.0.0-alpha.18"
+  }
+}
