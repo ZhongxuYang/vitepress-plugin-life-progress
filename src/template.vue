@@ -21,11 +21,11 @@
 </template>
 
 <script lang="ts" setup>
-import {ref, computed} from 'vue'
+import {ref, computed, onUnmounted} from 'vue'
 
-// const props = defineProps<{
-//   showLabel: boolean
-// }>()
+const props = defineProps<{
+  customEventName: string
+}>()
 const showLabel = ref(false)
 const handleChangeLabelStatus = (visible: boolean = true) => showLabel.value = visible
 
@@ -43,9 +43,17 @@ const months = computed(() => monthShortNames.map((mon, index) => ({
   width: index < month.value ? 100 : index === month.value ? date.value / fullDayNum.value * 100 : 0
 })))
 
-defineExpose({
-  handleChangeLabelStatus,
+// CustomEvent
+const event = (ev) => handleChangeLabelStatus(ev.detail)
+window.addEventListener(props.customEventName, event)
+onUnmounted(() => {
+  window.removeEventListener(props.customEventName, event)
 })
+
+// Why can't I get handleChangeLabelStatus in index.ts?...
+// defineExpose({
+//   handleChangeLabelStatus,
+// })
 </script>
 
 <style lang="postcss">
