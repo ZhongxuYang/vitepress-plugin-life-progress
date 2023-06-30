@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-life-progress",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Date progress bar plugin for vitepress",
   "keywords": [
     "documentation",

@@ -1,12 +1,15 @@
 # vitepress-plugin-life-progress
 
-> Date progress bar plugin for vitepress
+> Date progress bar plugin for Vitepress
 
-<p align="center">
-  <img src="https://img.shields.io/npm/dm/vitepress-plugin-life-progress.svg" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/vitepress-plugin-life-progress"><img src="https://img.shields.io/npm/v/vitepress-plugin-life-progress.svg" alt="Version"></a>
-  <a href="https://github.com/vuejs/vitepress-plugin-life-progress/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/vitepress-plugin-life-progress.svg" alt="License"></a>
-</p>
+<div align="center">
+
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![types][types-src]][types-href]
+[![License][license-src]][license-href]
+
+</div>
 
 ## Demo
 <img src="./docs/static/record.gif" />
@@ -34,3 +37,18 @@ export default {
 ```
 
 Then you can use `vitepress-plugin-life-progress` ! 🎉
+
+View [CHANGELOG](./CHANGELOG.md)
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/vitepress-plugin-life-progress/latest.svg?style=flat&colorA=18181B
+[npm-version-href]: https://npmjs.com/package/vitepress-plugin-life-progress
+
+[npm-downloads-src]: https://img.shields.io/npm/dm/vitepress-plugin-life-progress.svg?style=flat&colorA=18181B
+[npm-downloads-href]: https://npmjs.com/package/vitepress-plugin-life-progress
+
+[types-src]: https://img.shields.io/npm/types/vitepress-plugin-life-progress.svg?style=flat&colorA=18181B
+[types-href]: https://npmjs.com/package/vitepress-plugin-life-progress
+
+[license-src]: https://img.shields.io/npm/l/vitepress-plugin-life-progress.svg?style=flat&colorA=18181B
+[license-href]: https://npmjs.com/package/vitepress-plugin-life-progress
