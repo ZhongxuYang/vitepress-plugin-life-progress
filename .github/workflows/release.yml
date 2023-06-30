@@ -38,12 +38,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
         run: yarn && yarn build
 
       - name: Publish packages to NPM
-        run: npm publish --access=public
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN  
+          npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
