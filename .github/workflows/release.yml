@@ -32,10 +32,10 @@ jobs:
     if: ${{ github.repository_owner == 'ZhongxuYang' }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: 16
 
